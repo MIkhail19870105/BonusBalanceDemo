@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        float Balance = (int) -1000.55555468464;
-        float Replenishment = (int) 1024.768;
-        int BonusPercent;
-        if (Replenishment >= 1000) {
-            BonusPercent = 1;
+        float balance = (int) -1000.55555468464;
+        float replenishment = (int) 1024.768;
+        int bonusPercent;
+        if (replenishment >= 1000) {
+            bonusPercent = 1;
         }
         else {
-            BonusPercent = 0;
+            bonusPercent = 0;
         }
-        int BonusBalance = (int) (Replenishment * BonusPercent / 100);
-        int TotalBalance = (int) (Balance + Replenishment + BonusBalance);
-        System.out.println(BonusBalance);
-        System.out.println(TotalBalance);
+        int bonusBalance = (int) (replenishment * bonusPercent / 100);
+        int totalBalance = (int) (balance + replenishment + bonusBalance);
+        System.out.println(bonusBalance);
+        System.out.println(totalBalance);
     }
 }
